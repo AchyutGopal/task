@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Report</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="jumbotron p-2 mb-0" style="background-color: white;">
+      <strong class="float-left pr-3">User Report</strong>
+      <small class="float-left">Activity Report</small>
+
+      <div class="float-right">
+        <i class="large material-icons">keyboard_arrow_up</i>
+        <i class="large material-icons">build</i>
+        <i class="large material-icons">keyboard_arrow_down</i>
+        <i class="large material-icons">clear</i>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-2 ml-2 mt-2" id="profile"></div>
+      <div class="col-9 ml-3">
+        <div class="jumbotron p-2" id="insideActivity">
+          <strong>User Activity Report</strong>
+          <kbd class="float-right" style="background-color: white;"
+            ><small> April 2,2020- May 1, 2020</small></kbd
+          >
+        </div>
+        <div class="container">
+          <canvas
+            id="myChart"
+            style="position: relative; height: 50vh; width: 80vw;"
+          ></canvas>
+        </div>
+        <div class="comment-button">
+          <div class="aboveComment"></div>
+          <div class="d-flex" style="margin-top: -40px;">
+            <button class="btn left btn-light changeButton mr-2 ml-4">
+              Recent Activity
+            </button>
+            <button class="btn btn-light mr-2 changeButton">
+              Projects Worked on
+            </button>
+            <button class="btn btn-light mr-2 changeButton">Profile</button>
+          </div>
+          <div id="comment"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+    <script src="renderScript.js"></script>
+
+    <script src="chart.js"></script>
+  </body>
+</html>

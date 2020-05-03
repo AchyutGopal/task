@@ -1,0 +1,38 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: grey;
+}
+.size {
+  font-size: 14px;
+}
+.changeSize {
+  font-size: 14px;
+}
+.left:hover {
+  border-right: 5px solid gray;
+}
+.changeButton {
+  font-size: 15px;
+  height: 40px;
+}
+.aboveComment {
+  background-color: #e9ecef;
+  height: 20px;
+}
+.imgBorder {
+  padding: 1px;
+  border: 1px solid lightgray;
+}
+
+#progressStylesAbove {
+  height: 12px;
+}
+.commonBackgroundColour {
+  background-color: #2abb9b;
+}
+a {
+  color: grey;
+}
+#editColor {
+  color: grey;
+}
